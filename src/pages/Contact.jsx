@@ -1,36 +1,45 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Clock, ShieldCheck, Building2, CheckCircle2 } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, ShieldCheck, Building2, CheckCircle2, UserCheck } from 'lucide-react';
 import ContactFormSection from '../components/ContactFormSection';
 import { footerLinks } from '../data/navigation';
 
 export default function Contact() {
   const operationsHubs = [
     {
-      region: 'Corporate Headquarters',
-      city: 'Rajkot, Gujarat',
-      address: '150 Feet Ring Road, Rajkot, Gujarat - 360005, India',
-      phone: '+91-9998003879',
-      displayPhone: '(+91) 99980 03879',
-      email: 'info@relinfinite.com',
-      badge: 'Main Registered Office'
+      region: 'Corporate & Registered Office',
+      city: 'Vadodara, Gujarat',
+      contactPerson: 'Mr. Rushit Kapadiya',
+      designation: 'Director',
+      address: '411, 4th, Kamaxi Kunj, Station Chhani Road, Vadodara - 390002, Gujarat, India',
+      phone: '+918045800695',
+      displayPhone: '+91 80458 00695',
+      email: 'bd@relinfinite.com',
+      badge: 'Main Headquarters',
+      isPrimary: true
     },
     {
       region: 'Manufacturing & PEB Desk',
       city: 'Ahmedabad - Sanand Cluster',
+      contactPerson: 'PEB Projects Desk',
+      designation: 'Engineering Estimations',
       address: 'Industrial Engineering Desk, Sanand Industrial Area, Gujarat, India',
-      phone: '+91-9998003879',
-      displayPhone: '(+91) 99980 03879',
-      email: 'inquiry@relinfinite.com',
-      badge: 'Factory & Steel Fabrication'
+      phone: '+918045800695',
+      displayPhone: '+91 80458 00695',
+      email: 'bd@relinfinite.com',
+      badge: 'Factory & Steel Fabrication',
+      isPrimary: false
     },
     {
       region: 'Western Regional Operations',
       city: 'Mumbai - Pune Corridor',
+      contactPerson: 'EPC Project Cell',
+      designation: 'Logistics & Coordination',
       address: 'Industrial Logistics & EPC Coordination Hub, Maharashtra, India',
-      phone: '+91-9998003879',
-      displayPhone: '(+91) 99980 03879',
-      email: 'inquiry@relinfinite.com',
-      badge: 'Warehouse & Logistics Desk'
+      phone: '+918045800695',
+      displayPhone: '+91 80458 00695',
+      email: 'bd@relinfinite.com',
+      badge: 'Warehouse & Logistics Desk',
+      isPrimary: false
     }
   ];
 
@@ -61,7 +70,7 @@ export default function Contact() {
               Let's Build Something Reliable, Together
             </h1>
             <p className="text-slate-200 text-base sm:text-lg leading-relaxed font-normal drop-shadow-sm">
-              Have a project in mind? Whether you're an architect, developer, or industrial client, our team is ready to assess your requirements and propose the right EPC solution.
+              Reach out to our leadership and project engineers for industrial plant civil works, warehouse constructions, and turnkey PEB design-build solutions.
             </p>
           </div>
         </div>
@@ -72,13 +81,13 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12" data-aos="fade-up">
             <span className="text-blue-600 font-bold text-xs uppercase tracking-wider block mb-2">
-              PAN-INDIA INDUSTRIAL REACH
+              REGISTERED HEADQUARTERS &amp; HUBS
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
-              Regional Operations &amp; Engineering Desks
+              Corporate Office &amp; Engineering Desks
             </h2>
             <p className="text-slate-600 text-sm mt-2">
-              Direct access to our senior structural designers, civil engineers, and PEB estimators.
+              Connect directly with our Director and senior industrial engineering leadership.
             </p>
           </div>
 
@@ -88,34 +97,51 @@ export default function Contact() {
                 key={hub.city}
                 data-aos="fade-up"
                 data-aos-delay={idx * 100}
-                className="bg-white p-7 rounded-2xl border border-slate-200/90 shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between"
+                className={`bg-white p-7 rounded-2xl border transition-all flex flex-col justify-between ${
+                  hub.isPrimary
+                    ? 'border-blue-500/80 shadow-lg ring-2 ring-blue-500/10'
+                    : 'border-slate-200/90 shadow-xs hover:shadow-md'
+                }`}
               >
                 <div>
-                  <div className="flex items-center justify-between mb-2">
+                  <div className="flex items-center justify-between mb-3">
                     <span className="text-[11px] font-mono font-bold uppercase text-blue-600">
                       {hub.region}
                     </span>
-                    <span className="text-[10px] font-semibold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-sm">
+                    <span
+                      className={`text-[10px] font-bold px-2.5 py-0.5 rounded-full ${
+                        hub.isPrimary
+                          ? 'bg-blue-600 text-white shadow-xs'
+                          : 'text-slate-600 bg-slate-100'
+                      }`}
+                    >
                       {hub.badge}
                     </span>
                   </div>
 
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">{hub.city}</h3>
+                  <h3 className="text-lg font-bold text-slate-900 mb-1">{hub.city}</h3>
 
-                  <div className="space-y-2.5 text-xs text-slate-600 mb-5">
+                  {hub.contactPerson && (
+                    <div className="flex items-center gap-2 mb-4 text-xs font-semibold text-slate-700 bg-slate-50 py-1.5 px-2.5 rounded-lg border border-slate-100">
+                      <UserCheck className="w-4 h-4 text-blue-600" />
+                      <span>{hub.contactPerson} ({hub.designation})</span>
+                    </div>
+                  )}
+
+                  <div className="space-y-3 text-xs text-slate-600 mb-5">
                     <div className="flex items-start gap-2.5">
                       <MapPin className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
-                      <span>{hub.address}</span>
+                      <span className="leading-relaxed font-medium text-slate-700">{hub.address}</span>
                     </div>
                     <div className="flex items-center gap-2.5">
                       <Phone className="w-4 h-4 text-blue-600 shrink-0" />
-                      <a href={`tel:${hub.phone}`} className="hover:text-blue-700 font-semibold text-slate-800">
+                      <a href={`tel:${hub.phone}`} className="hover:text-blue-700 font-bold text-slate-900">
                         {hub.displayPhone}
                       </a>
                     </div>
                     <div className="flex items-center gap-2.5">
                       <Mail className="w-4 h-4 text-blue-600 shrink-0" />
-                      <a href={`mailto:${hub.email}`} className="hover:text-blue-700 font-medium truncate">
+                      <a href={`mailto:${hub.email}`} className="hover:text-blue-700 font-semibold text-blue-700 truncate">
                         {hub.email}
                       </a>
                     </div>

@@ -31,7 +31,7 @@ export default function Navbar() {
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-1.5">
               <MapPin className="w-3.5 h-3.5 text-blue-400" />
-              <span>Registered Office: 150 Feet Ring Road, Rajkot, Gujarat</span>
+              <span>Registered Office: Station Chhani Road, Vadodara, Gujarat</span>
             </span>
             <span className="hidden lg:inline-block text-slate-500">•</span>
             <span className="hidden lg:flex items-center gap-1 text-sky-400 font-semibold">

@@ -11,7 +11,7 @@ export default function Careers() {
       id: 'senior-civil-engineer',
       title: 'Senior Civil Project Engineer (Industrial & Plants)',
       department: 'Civil Construction',
-      location: 'Rajkot / Dahej, Gujarat',
+      location: 'Vadodara / Dahej, Gujarat',
       type: 'Full-time',
       experience: '6+ Years',
       description: 'Lead civil construction works for chemical plants, machine foundations, and industrial infrastructure with rigorous site safety and quality standards.'
@@ -20,7 +20,7 @@ export default function Careers() {
       id: 'peb-structural-designer',
       title: 'Pre-Engineered Building (PEB) Structural Designer',
       department: 'Structural Engineering',
-      location: 'Rajkot / Ahmedabad, Gujarat',
+      location: 'Vadodara / Ahmedabad, Gujarat',
       type: 'Full-time',
       experience: '5+ Years',
       description: 'Perform structural design and factory fabrication modeling for large-span steel warehouses and industrial sheds using STAAD.Pro and MBS.'
@@ -38,7 +38,7 @@ export default function Careers() {
       id: 'project-planning-engineer',
       title: 'Project Planning & Quantity Estimation Engineer',
       department: 'Project Management & Sourcing',
-      location: 'Rajkot Headquarters',
+      location: 'Vadodara Headquarters',
       type: 'Full-time',
       experience: '3+ Years',
       description: 'Prepare detailed Bar Bending Schedules (BBS), quantity estimation, vendor procurement coordination, and Primavera/MS Project milestone tracking.'

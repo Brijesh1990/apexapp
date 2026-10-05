@@ -1,9 +1,9 @@
 export const teamMembers = [
   {
     id: 'executive-director',
-    name: 'Executive Leadership',
-    role: 'Managing Director & EPC Head',
-    specialty: '25+ Years Industrial EPC & Turnkey Execution',
+    name: 'Mr. Rushit Kapadiya',
+    role: 'Director',
+    specialty: 'Industrial EPC, Project Management & Business Development',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop',
     bio: 'Guides Relinfinite with a focus on risk-first engineering, transparent B2B collaboration, and disciplined project handovers across India.'
   },

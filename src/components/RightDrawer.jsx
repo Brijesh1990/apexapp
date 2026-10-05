@@ -90,10 +90,17 @@ export default function RightDrawer({ isOpen, onClose }) {
 
           {/* Contact Details in Drawer */}
           <div className="pt-8 border-t border-slate-800/80 mt-6 space-y-3">
-            <p className="text-xs uppercase font-bold tracking-widest text-slate-400 mb-2">Registered Headquarters</p>
+            <p className="text-xs uppercase font-bold tracking-widest text-slate-400 mb-1">Registered Headquarters</p>
+            
+            {/* Director Badge */}
+            <div className="bg-slate-900/90 p-2.5 rounded-lg border border-slate-800 mb-2">
+              <span className="text-[10px] uppercase font-bold text-sky-400 block">DIRECTOR</span>
+              <p className="text-xs font-semibold text-white">{footerLinks.contactInfo.contactPerson}</p>
+            </div>
+
             <div className="flex items-start gap-3 text-xs text-slate-300">
               <MapPin className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
-              <span>{footerLinks.contactInfo.address}</span>
+              <span className="leading-snug">{footerLinks.contactInfo.address}</span>
             </div>
             <div className="flex items-center gap-3 text-xs text-slate-300">
               <Phone className="w-4 h-4 text-blue-400 shrink-0" />

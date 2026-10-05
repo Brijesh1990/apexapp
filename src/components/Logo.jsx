@@ -1,28 +1,52 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Logo({ light = false, className = '' }) {
+export default function Logo({ light = false, showTagline = true, className = '', iconOnly = false }) {
+  const brandColor = light ? '#ffffff' : '#17449E';
+  const taglineColor = light ? '#cbd5e1' : '#292D32';
+
   return (
-    <Link to="/" className={`flex items-center gap-3 group transition-transform hover:scale-[1.02] ${className}`}>
-      {/* Industrial Structural Geometric Icon */}
-      <div className="relative w-9 h-9 rounded-lg bg-gradient-to-br from-blue-700 via-blue-800 to-indigo-900 flex items-center justify-center p-2 shadow-md group-hover:shadow-blue-500/25 transition-all">
-        {/* Abstract Infinity / Structural Truss Mark */}
-        <svg viewBox="0 0 24 24" className="w-5 h-5 text-white stroke-[2.2]" fill="none" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M3 12h3l3 8 6-16 3 8h3" />
+    <Link
+      to="/"
+      aria-label="Relinfinite - Home"
+      className={`inline-flex items-center gap-2.5 sm:gap-3 group transition-transform duration-300 hover:scale-[1.02] ${className}`}
+    >
+      {/* Precision Geometric Monogram Emblem (P + R) */}
+      <div className="relative shrink-0 flex items-center justify-center">
+        <svg
+          viewBox="0 0 160 160"
+          className="w-8 h-8 sm:w-10 sm:h-10 transition-transform duration-300 group-hover:rotate-[-2deg] group-hover:drop-shadow-[0_4px_12px_rgba(23,68,158,0.35)]"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M 10 10 L 105 10 C 135 10 155 28 155 58 C 155 86 136 104 108 106 L 155 150 L 118 150 L 78 110 L 38 110 L 38 150 L 10 150 Z M 38 38 L 38 82 L 100 82 C 116 82 126 73 126 60 C 126 47 116 38 100 38 Z"
+            fill={brandColor}
+          />
         </svg>
-        <span className="absolute -bottom-0.5 -right-0.5 w-2 h-2 rounded-full bg-sky-400 ring-2 ring-white"></span>
       </div>
 
-      <div className="flex flex-col leading-none">
-        <div className="flex items-baseline gap-1">
-          <span className={`text-[19px] font-black tracking-tight ${light ? 'text-white' : 'text-slate-900'}`}>
-            REL<span className="text-blue-600">INFINITE</span>
+      {!iconOnly && (
+        <div className="flex flex-col justify-center leading-none select-none">
+          {/* Main Brand Title */}
+          <span
+            className="text-[19px] sm:text-[22px] font-[900] tracking-[0.03em] uppercase transition-colors"
+            style={{ color: brandColor, fontFamily: 'system-ui, -apple-system, sans-serif' }}
+          >
+            RELINFINITE
           </span>
+
+          {/* Subtitle / Tagline */}
+          {showTagline && (
+            <span
+              className="text-[7.5px] sm:text-[8.5px] font-extrabold tracking-[0.01em] uppercase mt-0.5"
+              style={{ color: taglineColor }}
+            >
+              An Industrial and Infrastructure Construction Company
+            </span>
+          )}
         </div>
-        <span className={`text-[9px] font-bold tracking-[0.2em] uppercase mt-0.5 ${light ? 'text-slate-400' : 'text-slate-500'}`}>
-          PROJEXIVE PVT. LTD • EPC
-        </span>
-      </div>
+      )}
     </Link>
   );
 }

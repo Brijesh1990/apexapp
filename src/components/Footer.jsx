@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Linkedin, Twitter, Facebook, MapPin, Phone, Mail, Globe, ArrowUpRight, ShieldCheck } from 'lucide-react';
+import { Linkedin, Twitter, Facebook, MapPin, Phone, Mail, Globe, ArrowUpRight, ShieldCheck, UserCheck } from 'lucide-react';
 import Logo from './Logo';
 import { footerLinks } from '../data/navigation';
 
@@ -12,12 +12,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 mb-16">
           {/* Column 1: Brand & Identity (span 4) */}
           <div className="lg:col-span-4">
-            <Logo light={true} className="mb-5" />
+            <Logo light={true} showTagline={true} className="mb-5" />
             <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4 font-normal">
-              <strong className="text-white">RELENIFINITE PROJEXIVE PVT. LTD</strong> is a trusted full-service Industrial EPC company delivering projects from Concept to Completion across India.
+              <strong className="text-white">RELINFINITE PROJEXIVE PVT. LTD</strong> is a trusted industrial EPC and infrastructure company delivering turnkey projects from Concept to Completion across India.
             </p>
             <p className="text-slate-400 text-xs leading-relaxed mb-6">
-              Precision engineering, uncompromised safety, and on-time execution for chemical plants, power stations, pre-engineered buildings (PEB), and industrial warehouses.
+              Precision engineering, uncompromised safety, and on-time execution for chemical plants, power stations, pre-engineered buildings (PEB), and heavy industrial warehouses.
             </p>
 
             {/* Social Links */}
@@ -113,22 +113,32 @@ export default function Footer() {
           {/* Column 4: Contact Us (span 3) */}
           <div className="lg:col-span-3">
             <h4 className="text-xs font-bold tracking-widest text-slate-200 uppercase mb-4">
-              CONTACT US
+              CONTACT INFO
             </h4>
+
+            {/* Director Highlights */}
+            <div className="mb-4 p-3 rounded-xl bg-slate-900/90 border border-slate-800">
+              <div className="flex items-center gap-2 text-xs font-bold text-sky-400 mb-0.5">
+                <UserCheck className="w-3.5 h-3.5" />
+                <span>{footerLinks.contactInfo.contactPerson}</span>
+              </div>
+              <span className="text-[11px] text-slate-400">{footerLinks.contactInfo.designation}</span>
+            </div>
+
             <ul className="space-y-3.5 text-xs sm:text-sm text-slate-400">
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
-                <span className="leading-snug">{footerLinks.contactInfo.address}</span>
+                <span className="leading-snug text-slate-300">{footerLinks.contactInfo.address}</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-blue-400 shrink-0" />
-                <a href={`tel:${footerLinks.contactInfo.phone}`} className="hover:text-white transition-colors font-medium">
+                <a href={`tel:${footerLinks.contactInfo.phone}`} className="hover:text-white transition-colors font-semibold text-slate-200">
                   {footerLinks.contactInfo.displayPhone || footerLinks.contactInfo.phone}
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-blue-400 shrink-0" />
-                <a href={`mailto:${footerLinks.contactInfo.email}`} className="hover:text-white transition-colors truncate">
+                <a href={`mailto:${footerLinks.contactInfo.email}`} className="hover:text-white transition-colors truncate font-medium text-slate-200">
                   {footerLinks.contactInfo.email}
                 </a>
               </li>
@@ -166,7 +176,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>© 2026 RELENIFINITE PROJEXIVE PVT. LTD. All rights reserved.</p>
+          <p>© 2026 RELINFINITE PROJEXIVE PVT. LTD. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <Link to="/about" className="hover:text-slate-400 transition-colors">Privacy Policy</Link>
             <Link to="/about" className="hover:text-slate-400 transition-colors">Terms of Service</Link>

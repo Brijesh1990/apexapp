@@ -110,21 +110,36 @@ export default function ContactFormSection() {
               </p>
 
               {/* Direct Contacts List */}
-              <div className="space-y-6 bg-slate-50 p-6 rounded-2xl border border-slate-100 mb-8">
-                {/* Headquarters */}
+              <div className="space-y-5 bg-slate-50 p-6 rounded-2xl border border-slate-200/80 mb-8 shadow-xs">
+                {/* Director & Leadership Card */}
+                <div className="flex items-start gap-4 pb-4 border-b border-slate-200/80">
+                  <div className="w-11 h-11 rounded-xl bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-sm">
+                    <ShieldCheck className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-blue-600 block mb-0.5">
+                      DIRECTOR &amp; KEY CONTACT
+                    </span>
+                    <p className="text-base font-bold text-slate-900 leading-tight">
+                      {footerLinks.contactInfo.contactPerson || 'Mr. Rushit Kapadiya'}
+                    </p>
+                    <p className="text-xs font-semibold text-slate-500 mt-0.5">
+                      {footerLinks.contactInfo.designation || 'Director'} • Relinfinite Projexive Pvt. Ltd
+                    </p>
+                  </div>
+                </div>
+
+                {/* Registered Headquarters */}
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center shrink-0 mt-0.5">
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
                     <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 block mb-0.5">
-                      REGISTERED OFFICE &amp; OPERATIONS
+                      OFFICE &amp; REGISTERED ADDRESS
                     </span>
-                    <p className="text-sm font-semibold text-slate-800 leading-snug">
-                      {footerLinks.contactInfo.company}
-                    </p>
-                    <p className="text-xs text-slate-600 mt-1">
-                      {footerLinks.contactInfo.address}
+                    <p className="text-xs sm:text-sm font-semibold text-slate-800 leading-relaxed">
+                      {footerLinks.contactInfo.officeAddress || footerLinks.contactInfo.address}
                     </p>
                   </div>
                 </div>
@@ -136,11 +151,11 @@ export default function ContactFormSection() {
                   </div>
                   <div>
                     <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 block mb-0.5">
-                      DIRECT CONSULTATION DESK
+                      MOBILE / DIRECT CONTACT
                     </span>
                     <a
                       href={`tel:${footerLinks.contactInfo.phone}`}
-                      className="text-sm font-bold text-blue-700 hover:underline block"
+                      className="text-sm font-bold text-blue-700 hover:text-blue-800 hover:underline block"
                     >
                       {footerLinks.contactInfo.displayPhone || footerLinks.contactInfo.phone}
                     </a>
@@ -155,19 +170,13 @@ export default function ContactFormSection() {
                   </div>
                   <div>
                     <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 block mb-0.5">
-                      OFFICIAL ENQUIRY EMAIL
+                      DIRECT BUSINESS EMAIL
                     </span>
                     <a
                       href={`mailto:${footerLinks.contactInfo.email}`}
                       className="text-sm font-semibold text-slate-800 hover:text-blue-600 transition-colors block truncate"
                     >
                       {footerLinks.contactInfo.email}
-                    </a>
-                    <a
-                      href={`mailto:${footerLinks.contactInfo.proposalsEmail}`}
-                      className="text-xs text-slate-500 hover:text-blue-600 transition-colors block truncate"
-                    >
-                      {footerLinks.contactInfo.proposalsEmail}
                     </a>
                   </div>
                 </div>
