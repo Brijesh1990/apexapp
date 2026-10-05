@@ -1,145 +1,147 @@
 export const industrialProjects = [
   {
-    id: 'solar-array-delta',
-    title: 'Solar Array Delta',
-    category: 'ENERGY',
-    tag: 'Power',
-    location: 'Nevada, USA',
-    year: '2024',
-    scope: '650 MW Solar PV Plant & 200 MWh BESS Storage Facility',
-    client: 'Nevada Clean Power Consortium',
-    image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop',
-    description: 'A cutting-edge renewable generation plant spanning 3,200 desert acres, featuring single-axis tracking panels and integrated utility battery storage.'
-  },
-  {
-    id: 'og-refinery-alpha',
-    title: 'O&G Refinery Alpha',
-    category: 'REFINERY',
-    tag: 'Industrial',
-    location: 'Texas, USA',
-    year: '2023',
-    scope: 'Hydrocracker Expansion & Catalytic Cracking Modernization',
-    client: 'Gulf Coast Energy Partners',
-    image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1200&auto=format&fit=crop',
-    description: 'Comprehensive EPC overhaul of a premier refinery unit, reducing emissions by 34% while boosting daily throughput by 85,000 barrels.'
-  },
-  {
-    id: 'harbor-wind-farm',
-    title: 'Harbor Wind Farm',
-    category: 'INFRASTRUCTURE',
-    tag: 'Infrastructure',
-    location: 'North Sea, UK',
-    year: '2024',
-    scope: 'Offshore Wind Substructure Foundations & Subsea Cable Routing',
-    client: 'North Sea Renewable Power Authority',
-    image: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1200&auto=format&fit=crop',
-    description: 'High-precision offshore installation of 48 deep-water turbine monopile foundations under rigorous maritime weather conditions.'
-  },
-  {
-    id: 'petrochem-polymer-hub',
-    title: 'Petrochem Polymer Hub',
-    category: 'REFINERY',
+    id: 'dahej-chemical-complex',
+    title: 'Dahej Specialty Chemical Complex',
+    category: 'CHEMICAL',
     tag: 'Chemical',
-    location: 'Antwerp, Belgium',
-    year: '2023',
-    scope: 'Polypropylene High-Yield Extrusion Complex',
-    client: 'EuroChemical Dynamics',
+    location: 'Dahej PCPIR, Gujarat, India',
+    year: '2024',
+    scope: 'Civil works engineered to withstand aggressive chemical exposures, reactor pads & containment bunds',
+    client: 'Leading Specialty Chemicals Producer',
     image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop',
-    description: 'Specialized chemical synthesis plant built to the strictest European environmental standards and SIL-3 safety interlocks.'
+    description: 'Turnkey civil EPC package including acid-resistant flooring, heavy equipment foundations, explosive relief structures, and underground effluent management systems.'
   },
   {
-    id: 'pacific-deep-berth',
-    title: 'Pacific Deep-Water Terminal',
+    id: 'sanand-logistics-peb',
+    title: 'Sanand Industrial Logistics Hub (PEB)',
+    category: 'WAREHOUSE',
+    tag: 'PEB & Warehouse',
+    location: 'Sanand Industrial Area, Gujarat, India',
+    year: '2024',
+    scope: '450,000 Sq Ft Pre-Engineered Steel Building with 42m Clear Spans and FM2 Flooring',
+    client: 'Multinational Logistics & 3PL Operator',
+    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop',
+    description: 'Fast-track PEB execution erected in 120 days from factory fabrication to site commissioning, featuring automated docking pits and super-flat flooring.'
+  },
+  {
+    id: 'kutch-power-substation',
+    title: 'Kutch Power Generation Civil Works',
+    category: 'POWER',
+    tag: 'Power',
+    location: 'Kutch, Gujarat, India',
+    year: '2023',
+    scope: 'Heavy Machine Foundations, Turbo-Generator Basemats & GIS Substation Civil Works',
+    client: 'Independent Power Producer (IPP)',
+    image: 'https://images.unsplash.com/photo-1497440001374-f26997328c1b?q=80&w=1200&auto=format&fit=crop',
+    description: 'Critical civil foundations engineered for extreme seismic and thermal stress, completed on schedule with zero lost-time incidents.'
+  },
+  {
+    id: 'pune-auto-manufacturing-shell',
+    title: 'Pune Heavy Industrial Shed & Facility',
+    category: 'WAREHOUSE',
+    tag: 'PEB & Warehouse',
+    location: 'Chakan Industrial Zone, Pune, Maharashtra',
+    year: '2024',
+    scope: 'Custom-engineered steel PEB manufacturing facility with 25T overhead crane rails',
+    client: 'Tier-1 Automotive Component Manufacturer',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop',
+    description: 'High-clearance pre-engineered steel structure designed for heavy manufacturing equipment, natural day-lighting louvers, and integrated office civil blocks.'
+  },
+  {
+    id: 'ankleshwar-pharma-plant',
+    title: 'Ankleshwar Bulk Drug Synthesis Plant',
+    category: 'CHEMICAL',
+    tag: 'Chemical',
+    location: 'Ankleshwar GIDC, Gujarat, India',
+    year: '2023',
+    scope: 'Complete civil infrastructure and Cleanroom-grade interior civil finishes',
+    client: 'Global Active Pharmaceutical Ingredients (API) Firm',
+    image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1200&auto=format&fit=crop',
+    description: 'Precision civil execution compliant with FDA and cGMP standards, incorporating specialized chemical containment and vapor-barrier envelopes.'
+  },
+  {
+    id: 'gujarat-industrial-infra',
+    title: 'Integrated Industrial Park Arterial Roads & Drainage',
     category: 'INFRASTRUCTURE',
     tag: 'Infrastructure',
-    location: 'Seattle, USA',
+    location: 'Rajkot - Morbi Industrial Corridor, Gujarat',
     year: '2024',
-    scope: 'Post-Panamax Automated Container Berth and Crane Rail',
-    client: 'Pacific Maritime Commission',
-    image: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=1200&auto=format&fit=crop',
-    description: 'Reinforced seismic deep marine quay with high-speed automated gantry crane systems and shore-to-ship electric power grids.'
-  },
-  {
-    id: 'alpine-hydro-station',
-    title: 'Alpine Hydro Reservoir Plant',
-    category: 'ENERGY',
-    tag: 'Power',
-    location: 'Valais, Switzerland',
-    year: '2022',
-    scope: 'Pumped-Storage Underground Cavern & Penstock Piping',
-    client: 'Helvetia Hydro Electric',
-    image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=1200&auto=format&fit=crop',
-    description: 'Underground high-pressure turbine cavern excavated through granite with minimal surface footprint, providing rapid peak grid stabilization.'
-  }
-];
-
-// Exact items from Screen 2 (Portfolio / Gallery page)
-export const galleryItems = [
-  {
-    id: 'essence-branding',
-    title: 'Essence Branding',
-    year: '2023',
-    category: 'BRANDING',
-    aspect: 'aspect-4/3',
-    image: 'https://images.unsplash.com/photo-1634942537034-2531766767d1?q=80&w=800&auto=format&fit=crop',
-    description: 'Comprehensive corporate visual identity and strategic brand guidelines for industrial enterprises.'
-  },
-  {
-    id: 'light-study-04',
-    title: 'Light Study #04',
-    year: '2022',
-    category: 'PHOTOGRAPHY',
-    aspect: 'aspect-square',
-    image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop',
-    description: 'Architectural shadows, textured metallic planes, and ambient atmospheric luminescence.'
-  },
-  {
-    id: 'digital-experience',
-    title: 'Digital Experience',
-    year: '2024',
-    category: 'UI/UX',
-    aspect: 'aspect-4/3',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop',
-    description: 'Industrial SCADA interface and real-time telemetry dashboard for multi-facility operations.'
-  },
-  {
-    id: 'minimalist-forms',
-    title: 'Minimalist Forms',
-    year: '2023',
-    category: '3D',
-    aspect: 'aspect-3/4',
-    image: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?q=80&w=800&auto=format&fit=crop',
-    description: 'Explorations in material tactility, concrete geometric pillars, and industrial ceramic vessels.'
-  },
-  {
-    id: 'studio-archive',
-    title: 'Studio Archive',
-    year: '2023',
-    category: 'GRAPHIC DESIGN',
-    aspect: 'aspect-square',
-    image: 'https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=800&auto=format&fit=crop',
-    description: 'Curated technical schematics, architectural print plates, and tactile substrate studies.'
-  },
-  {
-    id: 'modernist-identity',
-    title: 'Modernist Identity',
-    year: '2022',
-    category: 'BRANDING',
-    aspect: 'aspect-square',
-    image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop',
-    description: 'Monochrome stationery and marble substrate design system for luxury spatial developers.'
+    scope: 'Reinforced concrete pavements, heavy truck culverts & stormwater drainage network',
+    client: 'Industrial Infrastructure Development Authority',
+    image: 'https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?q=80&w=1200&auto=format&fit=crop',
+    description: 'Durable infrastructure civil works engineered to support 60-tonne trailer loads and monsoon stormwater flows with lifetime durability.'
   }
 ];
 
 export const caseStudyData = {
-  tag: 'Featured Case Study',
-  title: 'Aesthetics of Architecture',
-  vol: 'Vol. 01 — Spatial Design',
-  category: 'CASE STUDY',
-  images: [
-    'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1400&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1400&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1400&auto=format&fit=crop'
+  title: 'Dahej Specialty Chemical Complex EPC',
+  client: 'Leading Specialty Chemicals Producer',
+  category: 'Chemical Plant Civil Construction',
+  year: '2024',
+  location: 'Dahej, Gujarat, India',
+  metrics: [
+    { label: 'Total Footprint', value: '180,000 Sq. Ft.' },
+    { label: 'Concrete Poured', value: '14,200 m³' },
+    { label: 'Safety Record', value: 'Zero Incident (0 LTI)' },
+    { label: 'Schedule Adherence', value: '100% On-Time' }
   ],
-  description: 'Exploring the intersection of brutalist geometry and soft natural light. This project redefined how we perceive institutional spaces, prioritizing atmosphere and human emotion over pure utility.'
+  images: [
+    {
+      url: 'https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?q=80&w=1200&auto=format&fit=crop',
+      caption: 'Foundation basemat casting with high-durability chemical-resistant concrete mix.'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop',
+      caption: 'Reactor pad civil execution and secondary containment bund wall construction.'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop',
+      caption: 'Integrated PEB raw material storage shed with 36m clear span.'
+    }
+  ]
 };
+
+export const galleryItems = [
+  {
+    id: 1,
+    title: 'Chemical Plant Reactor Foundation',
+    category: 'Industrial Civil',
+    location: 'Dahej, Gujarat',
+    image: 'https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?q=80&w=800&auto=format&fit=crop'
+  },
+  {
+    id: 2,
+    title: 'Pre-Engineered Steel Warehouse Framework',
+    category: 'PEB Structures',
+    location: 'Sanand, Gujarat',
+    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop'
+  },
+  {
+    id: 3,
+    title: 'Power Generation Substation Civil Works',
+    category: 'Power Sector',
+    location: 'Kutch, Gujarat',
+    image: 'https://images.unsplash.com/photo-1497440001374-f26997328c1b?q=80&w=800&auto=format&fit=crop'
+  },
+  {
+    id: 4,
+    title: 'Industrial Manufacturing Shed Assembly',
+    category: 'PEB Structures',
+    location: 'Pune, Maharashtra',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop'
+  },
+  {
+    id: 5,
+    title: 'Heavy Civil Infrastructure & Roads',
+    category: 'Infrastructure',
+    location: 'Rajkot, Gujarat',
+    image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800&auto=format&fit=crop'
+  },
+  {
+    id: 6,
+    title: 'Automated Logistics Distribution Hub',
+    category: 'Warehouse Civil & PEB',
+    location: 'Chakan, Maharashtra',
+    image: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=800&auto=format&fit=crop'
+  }
+];

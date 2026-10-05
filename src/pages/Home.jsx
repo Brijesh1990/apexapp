@@ -14,37 +14,37 @@ import ContactFormSection from '../components/ContactFormSection';
 export default function Home() {
   return (
     <main>
-      {/* 1. Hero Section */}
+      {/* 1. Hero Section: Building Trust. Delivering Excellence. */}
       <Hero />
 
-      {/* 2. Who We Are */}
+      {/* 2. Introduction (SEO Section): Trusted EPC Company in India */}
       <WhoWeAre />
 
-      {/* 3. Integrated Technical Capabilities */}
+      {/* 3. Our Core Services (Snapshot): Industrial Construction & PEB */}
       <ServicesGrid />
 
-      {/* 4. The Apex Edge / Why Global Leaders Choose Us */}
+      {/* 4. Why Choose Relinfinite: 5 Core Value Pillars */}
       <WhyChooseUs />
 
-      {/* 5. Our Portfolio / Engineered Excellence Across the Globe */}
+      {/* 5. Our Portfolio: Proven Track Record Across Critical Sectors */}
       <PortfolioSection />
 
-      {/* 6. Our Core Team */}
+      {/* 6. Experienced Civil Engineers & Structural Designers */}
       <TeamSection />
 
-      {/* 7. Our Workflow / Disciplined Approach to Project Lifecycle */}
+      {/* 7. Concept to Completion: Disciplined EPC Lifecycle */}
       <WorkflowSection />
 
       {/* 8. Uncompromising Quality & Safety Standards */}
       <CommitmentsSection />
 
-      {/* 9. Partners Row */}
+      {/* 9. Technology & Material Partners */}
       <PartnersSection />
 
-      {/* 10. Blue CTA Banner */}
+      {/* 10. Closing CTA: Planning an industrial project? Talk to Our Team */}
       <CtaBanner />
 
-      {/* 11. Start a Project Discussion Form */}
+      {/* 11. Contact Form: Start a Project Discussion */}
       <ContactFormSection />
     </main>
   );

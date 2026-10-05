@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { X, Phone, Mail, MapPin, ArrowRight, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { X, Phone, Mail, MapPin, ArrowRight, Linkedin, Twitter, Facebook, Building2 } from 'lucide-react';
 import Logo from './Logo';
 import { navLinks, footerLinks } from '../data/navigation';
 
@@ -47,7 +47,7 @@ export default function RightDrawer({ isOpen, onClose }) {
           <button
             onClick={onClose}
             aria-label="Close menu"
-            className="p-2 rounded-lg bg-slate-900 text-slate-400 hover:text-white hover:bg-slate-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="p-2 rounded-lg bg-slate-900 text-slate-400 hover:text-white hover:bg-slate-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
           >
             <X className="w-5 h-5" />
           </button>
@@ -81,27 +81,27 @@ export default function RightDrawer({ isOpen, onClose }) {
             <Link
               to="/contact"
               onClick={onClose}
-              className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-semibold shadow-lg shadow-blue-600/25 transition-all text-center"
+              className="w-full flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-bold shadow-lg shadow-blue-600/25 transition-all text-center"
             >
-              <span>Get in Touch</span>
+              <span>Get a Free Consultation</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
 
           {/* Contact Details in Drawer */}
           <div className="pt-8 border-t border-slate-800/80 mt-6 space-y-3">
-            <p className="text-xs uppercase font-bold tracking-widest text-slate-500 mb-2">Houston Headquarters</p>
-            <div className="flex items-start gap-3 text-xs text-slate-400">
+            <p className="text-xs uppercase font-bold tracking-widest text-slate-400 mb-2">Registered Headquarters</p>
+            <div className="flex items-start gap-3 text-xs text-slate-300">
               <MapPin className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
               <span>{footerLinks.contactInfo.address}</span>
             </div>
-            <div className="flex items-center gap-3 text-xs text-slate-400">
+            <div className="flex items-center gap-3 text-xs text-slate-300">
               <Phone className="w-4 h-4 text-blue-400 shrink-0" />
-              <a href={`tel:${footerLinks.contactInfo.phone}`} className="hover:text-blue-300 transition-colors">
-                {footerLinks.contactInfo.phone}
+              <a href={`tel:${footerLinks.contactInfo.phone}`} className="hover:text-blue-300 transition-colors font-medium">
+                {footerLinks.contactInfo.displayPhone || footerLinks.contactInfo.phone}
               </a>
             </div>
-            <div className="flex items-center gap-3 text-xs text-slate-400">
+            <div className="flex items-center gap-3 text-xs text-slate-300">
               <Mail className="w-4 h-4 text-blue-400 shrink-0" />
               <a href={`mailto:${footerLinks.contactInfo.email}`} className="hover:text-blue-300 transition-colors truncate">
                 {footerLinks.contactInfo.email}
@@ -111,16 +111,16 @@ export default function RightDrawer({ isOpen, onClose }) {
         </div>
 
         {/* Drawer Footer with Socials */}
-        <div className="p-6 border-t border-slate-800/80 bg-slate-950/60 flex items-center justify-between text-xs text-slate-500">
-          <span>Apex Industrial EPC</span>
+        <div className="p-6 border-t border-slate-800/80 bg-slate-950/60 flex items-center justify-between text-xs text-slate-400">
+          <span>Relinfinite Projexive Pvt. Ltd</span>
           <div className="flex items-center gap-3">
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="p-1.5 rounded bg-slate-900 text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="p-1.5 rounded bg-slate-900 text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
               <Linkedin className="w-4 h-4" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer" className="p-1.5 rounded bg-slate-900 text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
+            <a href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter" className="p-1.5 rounded bg-slate-900 text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
               <Twitter className="w-4 h-4" />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="p-1.5 rounded bg-slate-900 text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
+            <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook" className="p-1.5 rounded bg-slate-900 text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
               <Facebook className="w-4 h-4" />
             </a>
           </div>

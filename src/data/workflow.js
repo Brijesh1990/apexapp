@@ -1,57 +1,57 @@
 export const workflowSteps = [
   {
     step: '01',
-    title: 'Conceptual Design',
-    description: 'Defining project feasibility, preliminary scope, and initial engineering blueprints.',
+    title: 'Requirement Finalization & Feasibility',
+    description: 'Assessing project feasibility, soil parameters, load factors, and architectural roadmap.',
     details: [
-      'Site geotechnical evaluation & environmental impact studies',
-      'Preliminary CapEx/OpEx financial forecasting',
+      'Site geotechnical evaluation & risk assessment',
+      'Preliminary structural modeling & span determination',
       'FEED (Front-End Engineering Design) stage gates',
-      'Stakeholder alignment & statutory zoning approvals'
+      'Statutory & industrial zoning compliance checks'
     ]
   },
   {
     step: '02',
-    title: 'Detail Engineering',
-    description: 'Rigorous technical specifications and multi-disciplinary design coordination.',
+    title: 'Detail Engineering & PEB Design',
+    description: 'Precision structural analysis, BIM coordination, and factory fabrication drafting.',
     details: [
-      'Multi-disciplinary 3D BIM coordination (Civil, Mech, Elec, Piping)',
-      'Finite element stress analysis & structural simulations',
-      'Instrumentation & automated control loop architecture',
-      'Hazard and Operability (HAZOP) peer reviews'
+      'Pre-Engineered steel member design under IS-800 & NBC',
+      'Finite element analysis for seismic & wind loads',
+      'Heavy equipment foundation and machine basemat drafting',
+      'HAZOP & civil constructability reviews'
     ]
   },
   {
     step: '03',
-    title: 'Global Procurement',
-    description: 'Strategic sourcing of materials and equipment from vetted global vendors.',
+    title: 'Factory Fabrication & Sourcing',
+    description: 'Off-site manufacturing of primary and secondary steel members in controlled facilities.',
     details: [
-      'Pre-qualification of certified tier-1 global equipment OEMs',
-      'Expediting and in-factory quality surveillance (FAT tests)',
-      'Heavy-lift intermodal ocean & overland logistics routing',
-      'Material traceability & mill test certification tracking'
+      'Automated submerged arc welding of structural steel beams',
+      'Shot-blasting and anti-corrosive epoxy primer coating',
+      'Certified material mill test reports (MTR) tracking',
+      'Pre-dispatch ultrasonic & radiographic quality checks'
     ]
   },
   {
     step: '04',
-    title: 'Construction',
-    description: 'On-site execution managed by expert supervisors with stringent quality controls.',
+    title: 'Civil Works & Site Assembly',
+    description: 'On-site civil execution, foundation casting, and rapid modular steel building erection.',
     details: [
-      'Turnkey site civil earthworks & deep foundation pilings',
-      'Heavy crane rigging and modular component lifting',
-      'Zero-tolerance safety enforcement under OSHA & ISO standards',
-      'Continuous drone photogrammetry & BIM progress validation'
+      'Turnkey earthworks, mass concrete pours & chemical bunds',
+      'Bolted high-tensile steel frame crane assembly',
+      'Super-flat industrial concrete flooring (FM2 grade)',
+      'Strict zero-harm site safety & daily tool-box talks'
     ]
   },
   {
     step: '05',
-    title: 'Commissioning',
-    description: 'System testing, operator training, and final handover for operational readiness.',
+    title: 'Testing, Commissioning & Handover',
+    description: 'Rigorous structural inspections, civil finishes, and timely project delivery.',
     details: [
-      'Cold & hot loop checks and system hydrostatic pressure testing',
-      'Control system SCADA validation & telemetry sign-off',
-      'Client staff operational & emergency response training',
-      'Comprehensive as-built BIM digital twin documentation'
+      'Load deflection and bolt torque calibration verification',
+      'Stormwater, effluent, and electrical tie-in testing',
+      'Comprehensive as-built drawings and warranty handover',
+      'Client staff operational walk-through and documentation'
     ]
   }
 ];
@@ -60,24 +60,24 @@ export const commitments = [
   {
     id: 'safety',
     title: 'Safety First Culture',
-    description: 'Implementing rigorous OSHA and international safety protocols to ensure a zero-incident workplace across all active job sites.',
+    description: 'Enforcing zero-harm protocols and daily site EHS inspections across all Indian project sites.',
     icon: 'ShieldCheck',
-    metrics: '0.00 Total Recordable Incident Rate (TRIR)'
+    metrics: 'Zero Lost-Time Injury (LTI) Standard'
   },
   {
     id: 'compliance',
-    title: 'Technical Compliance',
-    description: 'Every project undergoes multi-stage technical audits and quality assurance benchmarks under ISO 9001:2015 accreditation.',
+    title: 'Quality & Technical Compliance',
+    description: 'Every batch of concrete and fabricated steel undergoes rigorous testing adhering to Indian & international benchmarks.',
     icon: 'CheckCircle2',
-    metrics: '100% Third-Party Audited Quality Systems'
+    metrics: 'National Building Code (NBC) & IS Compliant'
   }
 ];
 
 export const partners = [
-  { name: 'PARTNER 1', sector: 'Heavy Machinery & Cranes' },
-  { name: 'PARTNER 2', sector: 'High-Grade Steel Fabrication' },
-  { name: 'PARTNER 3', sector: 'Industrial Automation & SCADA' },
-  { name: 'PARTNER 4', sector: 'Global Maritime Logistics' },
-  { name: 'PARTNER 5', sector: 'Clean Energy Technologies' },
-  { name: 'PARTNER 6', sector: 'Geotechnical Engineering' }
+  { name: 'Tata Steel', sector: 'Structural Sections' },
+  { name: 'JSW Steel', sector: 'High-Tensile Plates' },
+  { name: 'UltraTech', sector: 'Industrial Concrete' },
+  { name: 'Jindal Steel', sector: 'Primary Steel Members' },
+  { name: 'L&T Switchgear', sector: 'Electrical Infrastructure' },
+  { name: 'SAIL', sector: 'Heavy Rolled Sections' }
 ];

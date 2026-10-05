@@ -1,11 +1,10 @@
 export const navLinks = [
   { name: 'Home', path: '/' },
-  { name: 'About', path: '/about' },
+  { name: 'About Us', path: '/about' },
   { name: 'Services', path: '/services' },
   { name: 'Projects', path: '/projects' },
   { name: 'Industries', path: '/industries' },
   { name: 'EPC Process', path: '/epc-process' },
-  { name: 'Careers', path: '/careers' },
   { name: 'Contact', path: '/contact' },
 ];
 
@@ -13,24 +12,29 @@ export const footerLinks = {
   navigation: [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
-    { name: 'Services', path: '/services' },
-    { name: 'Our Projects', path: '/projects' },
-    { name: 'Industries', path: '/industries' },
-    { name: 'EPC Process', path: '/epc-process' },
+    { name: 'EPC Services', path: '/services' },
+    { name: 'Industrial Construction', path: '/services#industrial-construction' },
+    { name: 'PEB & Warehouse Buildings', path: '/services#peb-buildings' },
+    { name: 'Portfolio & Projects', path: '/projects' },
   ],
   resources: [
-    { name: 'Careers', path: '/careers' },
-    { name: 'Safety & Quality', path: '/epc-process#safety' },
-    { name: 'Insights', path: '/about#insights' },
-    { name: 'Media Center', path: '/about#media' },
-    { name: 'Investor Relations', path: '/about#investors' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Concept to Completion', path: '/about#approach' },
+    { name: 'What Sets Us Apart', path: '/about#why-us' },
+    { name: 'Safety & Quality Standards', path: '/epc-process' },
+    { name: 'Request Site Assessment', path: '/contact' },
+    { name: 'Get PEB Quote', path: '/contact' },
+    { name: 'Contact Our Engineers', path: '/contact' },
   ],
   contactInfo: {
-    address: '150 feet ring road Rajkot,  360005',
-    phone: '(+91)-9998003879',
-    email: 'info@apexindustrial.com',
-    proposalsEmail: 'info@apexindustrial.com',
-    website: 'www.apexindustrial.com'
+    company: 'RELENIFINITE PROJEXIVE PVT. LTD',
+    shortName: 'Relinfinite',
+    tagline: 'Building Trust. Delivering Excellence.',
+    address: '150 Feet Ring Road, Rajkot, Gujarat 360005, India',
+    phone: '+91-9998003879',
+    displayPhone: '+91 99980 03879',
+    email: 'info@relinfinite.com',
+    proposalsEmail: 'inquiry@relinfinite.com',
+    website: 'www.relinfinite.com',
+    responseSla: 'Typically responds within 24–48 hours'
   }
 };

@@ -1,42 +1,42 @@
 export const teamMembers = [
   {
-    id: 'marcus-vance',
-    name: 'Marcus Vance',
-    role: 'Chief Executive Officer',
-    specialty: '30+ Years Global EPC Leadership',
+    id: 'executive-director',
+    name: 'Executive Leadership',
+    role: 'Managing Director & EPC Head',
+    specialty: '25+ Years Industrial EPC & Turnkey Execution',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop',
-    bio: 'Pioneered mega-scale energy infrastructure across four continents, guiding Apex from regional contractor to global EPC powerhouse.'
+    bio: 'Guides Relinfinite with a focus on risk-first engineering, transparent B2B collaboration, and disciplined project handovers across India.'
   },
   {
-    id: 'elena-rostova',
-    name: 'Elena Rostova, PE',
-    role: 'VP of Engineering',
-    specialty: 'Structural Mechanics & BIM 5D',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop',
-    bio: 'Oversees 400+ multi-disciplinary engineers with a focus on seismic compliance, computational structural analysis, and parametric design.'
-  },
-  {
-    id: 'david-chen',
-    name: 'David Chen',
-    role: 'Director of Procurement',
-    specialty: 'Global Supply Chain Architecture',
+    id: 'structural-chief',
+    name: 'Chief Structural Designer',
+    role: 'Head of Structural & PEB Engineering',
+    specialty: 'Pre-Engineered Steel Structures & IS Codes',
     image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600&auto=format&fit=crop',
-    bio: 'Directs strategic tier-1 vendor partnerships and complex transoceanic logistics across steel, turbine components, and high-spec alloys.'
+    bio: 'Specializes in large clear spans, high-tonnage crane provisions, and precision factory fabrication modeling compliant with NBC & IS-800.'
   },
   {
-    id: 'tariq-al-mansoor',
-    name: 'Tariq Al-Mansoor',
-    role: 'Head of Construction',
-    specialty: 'On-Site Field Operations & Zero-Harm',
+    id: 'civil-head',
+    name: 'Senior Civil Project Director',
+    role: 'Head of Civil Infrastructure & Plants',
+    specialty: 'Chemical & Power Plant Foundations',
     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=600&auto=format&fit=crop',
-    bio: 'Veteran field executive with 25 years overseeing 5,000+ person site crews, ensuring rigorous OSHA standards and zero lost-time incidents.'
+    bio: 'Oversees on-site mass concrete pours, acid-resistant floorings, vibration-damped machine basemats, and large-scale industrial park drainage.'
   },
   {
-    id: 'sarah-jenkins',
-    name: 'Sarah Jenkins, AIA',
-    role: 'Lead Project Architect',
-    specialty: 'Industrial Architecture & Master Planning',
+    id: 'qa-safety-head',
+    name: 'Head of Quality & Safety Compliance',
+    role: 'Quality Assurance & EHS Director',
+    specialty: 'Zero-Harm Site Culture & ISO Audits',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop',
+    bio: 'Enforces rigorous material testing (concrete cube crushing, ultrasonic weld checks) and zero-tolerance safety standards on every jobsite.'
+  },
+  {
+    id: 'architect-lead',
+    name: 'Lead Industrial Architect',
+    role: 'Master Planning & Spatial Design',
+    specialty: 'Logistics Parks & Industrial Schematics',
     image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop',
-    bio: 'Bridges aesthetic clarity with severe industrial performance requirements, designing future-proof campuses and clean energy hubs.'
+    bio: 'Collaborates with industrial clients, consultants, and developers to draft high-efficiency site circulation, docking logistics, and scalable facility layouts.'
   }
 ];

@@ -13,7 +13,7 @@ export default function CommitmentsSection() {
               OUR CORE COMMITMENTS
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-bold tracking-tight text-white mb-8 leading-tight">
-              Uncompromising Quality & Safety Standards
+              Uncompromising Quality &amp; Safety Standards
             </h2>
 
             <div className="space-y-6">
@@ -35,7 +35,7 @@ export default function CommitmentsSection() {
                     <h3 className="text-lg font-bold text-white mb-2 group-hover:text-blue-300 transition-colors">
                       {item.title}
                     </h3>
-                    <p className="text-slate-300 text-sm leading-relaxed mb-3">
+                    <p className="text-slate-300 text-sm leading-relaxed mb-3 font-normal">
                       {item.description}
                     </p>
                     <span className="inline-block text-[11px] font-semibold text-blue-400 bg-blue-950/60 px-2.5 py-1 rounded border border-blue-800/40">
@@ -53,6 +53,9 @@ export default function CommitmentsSection() {
               <img
                 src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1000&auto=format&fit=crop"
                 alt="Quality assurance technical inspector verifying industrial safety compliance"
+                onError={(e) => {
+                  e.currentTarget.src = 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1000&auto=format&fit=crop';
+                }}
                 className="w-full h-[380px] sm:h-[460px] object-cover object-center group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent"></div>
@@ -63,7 +66,7 @@ export default function CommitmentsSection() {
                   <span className="text-emerald-400 font-bold uppercase tracking-wider">Verified 100% Compliant</span>
                 </div>
                 <span className="font-mono text-blue-400 bg-blue-950/80 px-2 py-1 rounded border border-blue-900">
-                  ISO 9001 • OSHA 1926
+                  ISO 9001 • NBC Compliant
                 </span>
               </div>
             </div>

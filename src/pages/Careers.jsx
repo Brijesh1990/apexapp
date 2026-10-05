@@ -8,151 +8,145 @@ export default function Careers() {
 
   const jobs = [
     {
-      id: 'lead-structural-engineer',
-      title: 'Lead Structural Engineer (Offshore / Energy)',
-      department: 'Detail Engineering',
-      location: 'Houston, TX / Hybrid',
+      id: 'senior-civil-engineer',
+      title: 'Senior Civil Project Engineer (Industrial & Plants)',
+      department: 'Civil Construction',
+      location: 'Rajkot / Dahej, Gujarat',
       type: 'Full-time',
-      experience: '8+ Years',
-      description: 'Lead structural finite-element calculations, seismic design, and 3D BIM integration for offshore turbine foundations and industrial processing units.'
+      experience: '6+ Years',
+      description: 'Lead civil construction works for chemical plants, machine foundations, and industrial infrastructure with rigorous site safety and quality standards.'
     },
     {
-      id: 'senior-procurement-manager',
-      title: 'Senior Global Procurement Manager',
-      department: 'Procurement & Logistics',
-      location: 'Houston, TX / Global Travel',
-      type: 'Full-time',
-      experience: '10+ Years',
-      description: 'Direct tier-1 mill and OEM supplier contracts for high-pressure steel, alloy piping, and heavy rotating equipment across international suppliers.'
-    },
-    {
-      id: 'bim-5d-coordinator',
-      title: 'BIM 5D Virtual Design & Construction Coordinator',
-      department: 'Technical Innovation',
-      location: 'London, UK / Remote',
+      id: 'peb-structural-designer',
+      title: 'Pre-Engineered Building (PEB) Structural Designer',
+      department: 'Structural Engineering',
+      location: 'Rajkot / Ahmedabad, Gujarat',
       type: 'Full-time',
       experience: '5+ Years',
-      description: 'Coordinate multi-trade clash detection, 4D construction schedule sequencing, and 5D cost forecasting models using Revit, Navisworks, and Synchro.'
+      description: 'Perform structural design and factory fabrication modeling for large-span steel warehouses and industrial sheds using STAAD.Pro and MBS.'
     },
     {
-      id: 'field-hse-director',
-      title: 'Field HSE Safety Director',
-      department: 'Quality & Safety',
-      location: 'Nevada Solar Site / On-site',
+      id: 'site-ehs-officer',
+      title: 'Site Safety & EHS Manager',
+      department: 'Quality & Safety Compliance',
+      location: 'Pan-India Project Sites',
       type: 'Full-time',
-      experience: '7+ Years',
-      description: 'Enforce zero-harm safety standards, lead daily toolbox audits, OSHA compliance, and site emergency response protocols across a 600-person site.'
+      experience: '4+ Years',
+      description: 'Enforce zero-harm safety standards, lead daily tool-box talks, hazard assessments, and ensure compliance with NBC and Indian safety regulations.'
+    },
+    {
+      id: 'project-planning-engineer',
+      title: 'Project Planning & Quantity Estimation Engineer',
+      department: 'Project Management & Sourcing',
+      location: 'Rajkot Headquarters',
+      type: 'Full-time',
+      experience: '3+ Years',
+      description: 'Prepare detailed Bar Bending Schedules (BBS), quantity estimation, vendor procurement coordination, and Primavera/MS Project milestone tracking.'
     }
   ];
 
   return (
     <main className="bg-white">
       {/* Hero */}
-      <section className="relative py-20 lg:py-28 bg-[#091830] text-white overflow-hidden">
+      <section className="relative py-20 lg:py-28 bg-[#071324] text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1541888946425-d0fbb186c5f7?q=80&w=2070&auto=format&fit=crop"
-            alt="Careers at Apex"
-            className="w-full h-full object-cover object-center opacity-25"
+            alt="Careers at Relinfinite Projexive"
+            onError={(e) => {
+              e.currentTarget.src = 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop';
+            }}
+            className="w-full h-full object-cover object-center opacity-65 scale-100"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#071324] via-[#091830]/90 to-[#0c2344]/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#040c18]/95 via-[#061427]/80 to-[#071324]/35"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#040c18] via-transparent to-[#040c18]/40"></div>
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-30 pointer-events-none"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl" data-aos="fade-up">
-            <span className="text-blue-400 font-bold text-xs sm:text-sm tracking-wider uppercase block mb-3">
-              JOIN OUR MISSION
+            <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-blue-600/30 border border-blue-400/40 text-sky-300 font-bold text-xs tracking-wider uppercase mb-4 backdrop-blur-md shadow-md">
+              CAREERS AT RELINFINITE
             </span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
-              Build the Infrastructure of the Next Century
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.15] drop-shadow-md">
+              Build India's Industrial Future With Us
             </h1>
-            <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
-              At Apex Industrial EPC, you'll work alongside world-class engineers, architects, and construction visionaries delivering projects that power cities and transform economies.
+            <p className="text-slate-200 text-base sm:text-lg leading-relaxed font-normal drop-shadow-sm">
+              Join a team of passionate civil engineers, structural designers, and industrial project leaders driving engineering excellence and precision PEB manufacturing across India.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Current Openings */}
+      {/* Positions Grid */}
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-14" data-aos="fade-up">
-            <h2 className="text-3xl font-bold text-slate-900 mb-3">
-              Current Open Positions
+          <div className="mb-12" data-aos="fade-up">
+            <span className="text-blue-600 font-bold text-xs uppercase tracking-wider block mb-2">
+              CURRENT OPPORTUNITIES
+            </span>
+            <h2 className="text-3xl font-bold text-slate-900">
+              Open Engineering &amp; Site Positions
             </h2>
-            <p className="text-slate-600 text-sm">
-              Explore global opportunities in structural engineering, field superintendence, and project controls.
-            </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 max-w-4xl mx-auto">
-            {jobs.map((job, index) => (
+          <div className="space-y-6">
+            {jobs.map((job, idx) => (
               <div
                 key={job.id}
                 data-aos="fade-up"
-                data-aos-delay={index * 100}
-                className="bg-white p-6 sm:p-8 rounded-xl border border-slate-200 shadow-xs hover:shadow-md transition-all flex flex-col md:flex-row md:items-center justify-between gap-6"
+                data-aos-delay={idx * 100}
+                className="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/90 shadow-xs hover:border-blue-400 hover:shadow-lg transition-all flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
               >
-                <div>
-                  <span className="text-xs font-mono font-semibold uppercase text-blue-600 block mb-1">
-                    {job.department}
-                  </span>
-                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2">
-                    {job.title}
-                  </h3>
-                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4 max-w-xl">
-                    {job.description}
-                  </p>
-
-                  <div className="flex flex-wrap items-center gap-4 text-xs text-slate-500 font-medium">
-                    <div className="flex items-center gap-1">
+                <div className="space-y-2">
+                  <div className="flex items-center gap-3 flex-wrap">
+                    <span className="px-2.5 py-0.5 rounded-md bg-blue-50 text-blue-700 text-xs font-bold uppercase">
+                      {job.department}
+                    </span>
+                    <span className="text-xs text-slate-500 flex items-center gap-1">
                       <MapPin className="w-3.5 h-3.5 text-blue-600" />
-                      <span>{job.location}</span>
-                    </div>
-                    <div className="flex items-center gap-1">
+                      {job.location}
+                    </span>
+                    <span className="text-xs text-slate-500 flex items-center gap-1">
                       <Clock className="w-3.5 h-3.5 text-blue-600" />
-                      <span>{job.type}</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Briefcase className="w-3.5 h-3.5 text-blue-600" />
-                      <span>{job.experience}</span>
-                    </div>
+                      {job.experience}
+                    </span>
                   </div>
+                  <h3 className="text-xl font-bold text-slate-900">{job.title}</h3>
+                  <p className="text-slate-600 text-sm max-w-2xl">{job.description}</p>
                 </div>
 
-                <div className="shrink-0">
-                  <button
-                    onClick={() => setSelectedJob(job)}
-                    className="w-full md:w-auto px-6 py-2.5 rounded-md bg-blue-600 hover:bg-blue-700 text-white font-medium text-xs tracking-wide transition-colors cursor-pointer"
-                  >
-                    Apply Now
-                  </button>
-                </div>
+                <button
+                  onClick={() => setSelectedJob(job)}
+                  className="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs uppercase tracking-wider shrink-0 transition-colors shadow-sm cursor-pointer"
+                >
+                  Apply Now
+                </button>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Application Modal */}
+      {/* Modal */}
       {selectedJob && (
-        <div className="fixed inset-0 bg-slate-950/70 backdrop-blur-xs z-50 flex items-center justify-center p-4">
-          <div className="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+        <div className="fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-xs flex items-center justify-center p-4">
+          <div className="bg-white rounded-2xl p-6 sm:p-8 max-w-lg w-full shadow-2xl border border-slate-200">
             {applied ? (
               <div className="text-center py-8 space-y-4">
-                <CheckCircle2 className="w-12 h-12 text-emerald-500 mx-auto" />
+                <CheckCircle2 className="w-14 h-14 text-emerald-600 mx-auto" />
                 <h3 className="text-xl font-bold text-slate-900">Application Submitted!</h3>
-                <p className="text-slate-600 text-xs sm:text-sm">
-                  Thank you for applying for the <span className="font-semibold">{selectedJob.title}</span> role. Our talent acquisition committee will review your qualifications.
+                <p className="text-slate-600 text-sm">
+                  Thank you for applying for <span className="font-semibold text-blue-700">{selectedJob.title}</span>. Our HR team will reach out after reviewing your credentials.
                 </p>
                 <button
                   onClick={() => {
                     setSelectedJob(null);
                     setApplied(false);
                   }}
-                  className="mt-4 px-5 py-2 rounded bg-blue-600 text-white text-xs font-medium hover:bg-blue-700"
+                  className="mt-4 px-6 py-2.5 rounded-xl bg-blue-600 text-white text-xs font-bold hover:bg-blue-700"
                 >
-                  Done
+                  Close
                 </button>
               </div>
             ) : (
@@ -171,35 +165,35 @@ export default function Careers() {
                 >
                   <div>
                     <label className="block text-slate-700 font-bold uppercase mb-1">Full Legal Name</label>
-                    <input type="text" required placeholder="Jane Doe" className="w-full px-3 py-2 border rounded-md" />
+                    <input type="text" required placeholder="e.g. Ramesh Patel" className="w-full px-3 py-2 border rounded-md" />
                   </div>
                   <div>
                     <label className="block text-slate-700 font-bold uppercase mb-1">Email Address</label>
-                    <input type="email" required placeholder="jane@example.com" className="w-full px-3 py-2 border rounded-md" />
+                    <input type="email" required placeholder="ramesh@example.com" className="w-full px-3 py-2 border rounded-md" />
                   </div>
                   <div>
-                    <label className="block text-slate-700 font-bold uppercase mb-1">LinkedIn Profile or Portfolio URL</label>
-                    <input type="url" placeholder="https://linkedin.com/in/..." className="w-full px-3 py-2 border rounded-md" />
+                    <label className="block text-slate-700 font-bold uppercase mb-1">Phone Number</label>
+                    <input type="tel" required placeholder="(+91) 98765 43210" className="w-full px-3 py-2 border rounded-md" />
                   </div>
                   <div>
                     <label className="block text-slate-700 font-bold uppercase mb-1">Years of EPC / Construction Experience</label>
                     <input type="number" min="0" placeholder="5" className="w-full px-3 py-2 border rounded-md" />
                   </div>
                   <div>
-                    <label className="block text-slate-700 font-bold uppercase mb-1">Cover Note / Certifications (PE, PMP, OSHA)</label>
-                    <textarea rows="3" placeholder="Briefly summarize your technical qualifications..." className="w-full px-3 py-2 border rounded-md"></textarea>
+                    <label className="block text-slate-700 font-bold uppercase mb-1">Brief Summary of Experience &amp; Projects Handled</label>
+                    <textarea rows="3" placeholder="Summarize your key achievements and technical software proficiency..." className="w-full px-3 py-2 border rounded-md"></textarea>
                   </div>
                   <div className="flex items-center justify-end gap-3 pt-4 border-t">
                     <button
                       type="button"
                       onClick={() => setSelectedJob(null)}
-                      className="px-4 py-2 text-slate-600 hover:text-slate-900"
+                      className="px-4 py-2 text-slate-600 hover:text-slate-900 cursor-pointer"
                     >
                       Cancel
                     </button>
                     <button
                       type="submit"
-                      className="px-5 py-2 bg-blue-600 text-white rounded-md font-bold hover:bg-blue-700"
+                      className="px-5 py-2.5 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 cursor-pointer shadow-sm"
                     >
                       Submit Application
                     </button>

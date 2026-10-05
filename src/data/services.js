@@ -1,125 +1,125 @@
 export const services = [
   {
-    id: 'industrial-epc',
-    title: 'Industrial EPC',
+    id: 'industrial-construction',
+    title: 'Industrial Construction Solutions',
     icon: 'Factory',
-    description: 'End-to-end engineering, procurement, and construction for complex industrial facilities.',
-    fullDescription: 'Apex delivers turnkey industrial EPC solutions, providing integrated oversight from initial feasibility studies to structural design, high-precision equipment installation, and turnkey facility delivery. Our multi-disciplinary engineering teams ensure seamless handoffs and rigorous compliance.',
+    description: 'Civil construction for chemical plants, power plants, warehouses & infrastructure projects.',
+    fullDescription: 'Relinfinite delivers turnkey civil engineering solutions with experienced builders and energetic designers, providing integrated oversight from initial feasibility studies to structural design, heavy equipment foundations, and final commissioning.',
     features: [
-      'Comprehensive FEED (Front-End Engineering Design)',
-      'Turnkey structural fabrication & mechanical assembly',
-      'Heavy machinery integration & industrial automation',
-      'Strict environmental & safety lifecycle management'
+      'Chemical plant civil works engineered for demanding environments',
+      'Power plant structural foundations & vibration damping',
+      'Scalable warehouse civil infrastructure & super-flat flooring',
+      'Industrial infrastructure, internal arterial roads & heavy drainage'
     ],
-    stats: '140+ Plants Built'
+    stats: 'Concept to Completion'
   },
   {
-    id: 'commercial-warehouse',
-    title: 'Commercial Warehouse',
+    id: 'peb-buildings',
+    title: 'Pre-Engineered Buildings (PEB)',
     icon: 'Warehouse',
-    description: 'Advanced logistics and storage solutions designed for maximum efficiency and scale.',
-    fullDescription: 'We engineer state-of-the-art logistics hubs, automated fulfillment centers, and climate-controlled distribution parks engineered to support cutting-edge supply chain technologies, robotics, and ultra-high-density storage configurations.',
+    description: 'Custom-engineered steel structures, factory-fabricated and site-assembled for speed and precision.',
+    fullDescription: 'Pre-Engineered Steel Buildings (PEB) are designed around your exact operational requirements — offering faster construction timelines, structural efficiency, and long-term cost savings compared to conventional construction.',
     features: [
-      'Automated Storage and Retrieval Systems (ASRS) ready',
-      'Super-flat high-tolerance industrial concrete flooring',
-      'Custom HVAC & cold-chain distribution zones',
-      'Optimized multi-dock cross-docking bays'
+      'Requirement finalization: load, span, usage, and site parameters',
+      'Precision factory fabrication of primary & secondary members',
+      'Rapid site assembly with high-tensile bolted connections',
+      'Ideal for logistics hubs, manufacturing shells & large sheds'
     ],
-    stats: '18M+ Sq Ft Erected'
+    stats: '40–50% Faster Erection'
   },
   {
-    id: 'infrastructure',
-    title: 'Infrastructure',
-    icon: 'Layers',
-    description: 'Large-scale civil and urban infrastructure projects delivered with technical precision.',
-    fullDescription: 'From heavy-duty transportation arteries and port marine structures to urban utility hubs, our infrastructure division applies advanced geotechnical modeling and durable materials engineering to build public and private assets built to last generations.',
-    features: [
-      'Bridges, causeways, and heavy transport corridors',
-      'Deep-water port berths & industrial maritime docks',
-      'Underground stormwater & utility tunnels',
-      'Geotechnical stabilization & deep foundation systems'
-    ],
-    stats: '60+ Major Civil Projects'
-  },
-  {
-    id: 'chemical-processing',
-    title: 'Chemical Processing',
+    id: 'chemical-plant-construction',
+    title: 'Chemical Plant Construction',
     icon: 'Droplets',
-    description: 'Specialized facilities for chemical manufacturing with stringent safety and compliance standards.',
-    fullDescription: 'Precision containment, hazardous substance pipelines, catalytic reactors, and high-pressure distillation complexes designed to meet world-class safety certifications and stringent environmental emissions standards.',
+    description: 'Civil works engineered to withstand demanding industrial environments.',
+    fullDescription: 'Specialized chemical synthesis facilities, acid-resistant floorings, secondary containment bunds, and explosion relief structures built to strict environmental and industrial safety standards.',
     features: [
-      'Exotic alloy piping & ASME Section VIII pressure vessels',
-      'Hazardous material containment & scrubber systems',
-      'Class 1 Div 1 explosion-proof instrumentation',
-      'Continuous process automation and SCADA integration'
+      'Acid/alkali-proof epoxy & vitrified tile lining',
+      'Heavy machine foundations for reactors & distillation columns',
+      'Underground hazardous effluent trenches & neutralization pits',
+      'Explosion venting and certified safety enclosures'
     ],
-    stats: '99.98% Safety Audit Score'
+    stats: 'Zero Non-Conformance'
   },
   {
-    id: 'power-generation',
-    title: 'Power Generation',
+    id: 'power-plant-construction',
+    title: 'Power Plant Construction',
     icon: 'Zap',
-    description: 'Sustainable and conventional energy projects, from wind farms to thermal power plants.',
-    fullDescription: 'Powering communities and heavy industrial plants with comprehensive energy EPC: utility-scale solar arrays, offshore wind installations, gas turbine cogeneration units, and high-voltage grid substation tie-ins.',
+    description: 'Structural and civil solutions built for reliability and long-term performance.',
+    fullDescription: 'Powering communities and industrial hubs with heavy turbo-generator basemats, boiler house structures, high-voltage GIS substation civil works, and cooling water circuits.',
     features: [
-      'Utility-scale solar farms & tracking PV arrays',
-      'Onshore and offshore wind turbine foundations',
-      'Combined-cycle gas turbine (CCGT) plants',
-      'Substation, BESS energy storage & high-voltage grid ties'
+      'Mass concrete pours for high-speed dynamic equipment',
+      'GIS substation buildings & transformer bay foundations',
+      'Cooling tower basins, pump houses & intake channels',
+      'Thermal fatigue & seismic resonance simulation'
     ],
-    stats: '4.2 GW Installed Capacity'
+    stats: 'Turnkey Reliability'
   },
   {
-    id: 'project-management',
-    title: 'Project Management',
-    icon: 'Briefcase',
-    description: 'Strategic oversight ensuring projects are delivered on time, within budget, and to spec.',
-    fullDescription: 'Our certified project management professionals utilize advanced 4D/5D Building Information Modeling (BIM), Primavera P6 critical path schedules, and real-time drone progress surveillance to maintain total fiscal and operational command.',
+    id: 'warehouse-construction',
+    title: 'Warehouse Construction',
+    icon: 'Layers',
+    description: 'Functional, scalable civil infrastructure for storage and logistics facilities.',
+    fullDescription: 'Engineering modern logistics hubs, automated fulfillment centers, and distribution parks with super-flat high-tolerance industrial concrete flooring and integrated docking infrastructure.',
     features: [
-      'Integrated Primavera P6 & BIM 4D time/cost tracking',
-      'Global procurement & supply chain logistics routing',
-      'Rigorous multi-tier vendor quality audits',
-      'Real-time executive reporting dashboards'
+      'Super-flat industrial flooring compliant with FM2 standards',
+      'Hydraulic dock leveler pit construction & retaining walls',
+      'Heavy-duty concrete external pavements for multi-axle trailers',
+      'Administrative civil blocks and driver rest amenities'
     ],
-    stats: '98.4% On-Schedule Rate'
+    stats: 'High-Density Logistics'
+  },
+  {
+    id: 'infrastructure-projects',
+    title: 'Infrastructure Projects',
+    icon: 'Briefcase',
+    description: 'Civil construction supporting large-scale industrial and public infrastructure.',
+    fullDescription: 'Heavy-duty industrial park access corridors, arterial stormwater networks, overhead pipe racks, and utility culverts engineered to endure multi-decade industrial service lifecycles.',
+    features: [
+      'Reinforced concrete industrial internal roads & bridges',
+      'Stormwater retention reservoirs & monsoon drainage canals',
+      'Overhead pipe-rack concrete pedestals & cable trenches',
+      'Perimeter security complexes & weighbridge foundations'
+    ],
+    stats: 'Pan-India Footprint'
   }
 ];
 
 export const edgeFeatures = [
   {
-    id: 'safety',
-    icon: 'ShieldCheck',
-    title: 'Safety Excellence',
-    description: 'Zero-harm culture integrated into every phase of our operations.'
+    id: 'end-to-end',
+    icon: 'Layers',
+    title: 'Concept to Completion',
+    description: 'End-to-end EPC expertise covering design, procurement, and civil build under one roof.'
   },
   {
-    id: 'reach',
-    icon: 'Globe',
-    title: 'Global Reach',
-    description: 'Operations spanning across continents with localized expertise.'
-  },
-  {
-    id: 'delivery',
-    icon: 'Clock',
-    title: 'On-Time Delivery',
-    description: 'Proven track record of meeting critical project milestones.'
-  },
-  {
-    id: 'integrity',
-    icon: 'Scale',
-    title: 'Integrity & Ethics',
-    description: 'Unwavering commitment to transparent and ethical business practices.'
-  },
-  {
-    id: 'innovation',
-    icon: 'Cpu',
-    title: 'Technical Innovation',
-    description: 'Leveraging cutting-edge BIM and AI for precision engineering.'
-  },
-  {
-    id: 'ecosystem',
+    id: 'engineers',
     icon: 'Users',
-    title: 'Partner Ecosystem',
-    description: 'Strong relationships with top-tier vendors and subcontractors globally.'
+    title: 'Expert Engineering Team',
+    description: 'Experienced civil engineers and structural designers adhering to NBC & IS codes.'
+  },
+  {
+    id: 'compliance',
+    icon: 'ShieldCheck',
+    title: 'Uncompromised Safety',
+    description: 'Strong safety and quality compliance standards with zero-harm site culture.'
+  },
+  {
+    id: 'custom-peb',
+    icon: 'Cpu',
+    title: 'Precision PEB Structures',
+    description: 'Custom-engineered steel structures factory-fabricated to exact site specifications.'
+  },
+  {
+    id: 'proven-track-record',
+    icon: 'Clock',
+    title: 'Cross-Sector Proven Track Record',
+    description: 'Demonstrated execution across chemical, power, warehouse & infrastructure sectors.'
+  },
+  {
+    id: 'risk-first',
+    icon: 'Scale',
+    title: 'Risk-First Engineering',
+    description: 'Every project begins with thorough risk, soil, and constructability assessments.'
   }
 ];
